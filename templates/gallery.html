@@ -1,0 +1,8 @@
+{% block body %}
+{% for dir, files in file_map.items() %}
+	{% for file in files %}
+	 <img src="{{url_for('static', filename=file)}}" width="80%"/>
+	 <br>
+	 {% endfor %}
+{% endfor %}
+{% endblock %}
